@@ -1,0 +1,392 @@
+INFO | 2024-12-11 15:28:40,385 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:28:44,434 | views | 15 | Received interaction request.
+INFO | 2024-12-11 15:28:44,485 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'report'}
+ERROR | 2024-12-11 15:28:44,650 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 46, in post
+    logger.info(f"Adjusting preferences for user_id: {user.user_id}.Current preferences: {user.preferences}, Post tags: {post.tags.all()}, Interaction weight: {weight}, user_tags:{user.tags.all()}")
+AttributeError: 'list' object has no attribute 'all'
+INFO | 2024-12-11 15:30:11,224 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:30:11,972 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:30:15,312 | views | 15 | Received interaction request.
+INFO | 2024-12-11 15:30:15,367 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'report'}
+ERROR | 2024-12-11 15:30:15,416 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 46, in post
+    logger.info(f"Adjusting preferences for user_id: {user.user_id}.Current preferences: {user.preferences}, Post tags: {post.tags.all()}, Interaction weight: {weight}, user_tags:{user.tags()}")
+TypeError: 'list' object is not callable
+INFO | 2024-12-11 15:30:26,289 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:30:26,864 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:30:29,871 | views | 15 | Received interaction request.
+INFO | 2024-12-11 15:30:29,912 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'report'}
+ERROR | 2024-12-11 15:30:29,944 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 46, in post
+    logger.info(f"Adjusting preferences for user_id: {user.user_id}.Current preferences: {user.preferences}, Post tags: {post.tags.all()}, Interaction weight: {weight}, user_tags:{user.tags()}")
+TypeError: 'list' object is not callable
+INFO | 2024-12-11 15:33:35,127 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:33:35,677 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:33:39,981 | views | 15 | Received interaction request.
+INFO | 2024-12-11 15:33:40,034 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'report'}
+INFO | 2024-12-11 15:33:40,042 | views | 46 | Adjusting preferences for user_id: user101.Current preferences: {'Django': 5.35, 'Nextjs': -5.88, 'Backend': 58.82, 'Reactjs': -5.88, 'Frontend': -5.88, 'Python Programming': 53.47}, Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>, Interaction weight: -5, user_tags:['Frontend', 'Nextjs', 'Reactjs']
+ERROR | 2024-12-11 15:33:40,066 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 49, in post
+    preferences, tags = adjust_preferences1(user.preferences, post.tags.all(), weight, user.tags)
+TypeError: adjust_preferences1() takes 3 positional arguments but 4 were given
+INFO | 2024-12-11 15:34:06,060 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:34:06,570 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:34:10,054 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:34:10,597 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:34:17,178 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:34:17,879 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:34:40,297 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:34:40,829 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:34:45,405 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:34:45,980 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:34:49,802 | views | 15 | Received interaction request.
+INFO | 2024-12-11 15:34:49,860 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'report'}
+INFO | 2024-12-11 15:34:49,868 | views | 46 | Adjusting preferences for user_id: user101.Current preferences: {'Django': 5.35, 'Nextjs': -5.88, 'Backend': 58.82, 'Reactjs': -5.88, 'Frontend': -5.88, 'Python Programming': 53.47}, Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>, Interaction weight: -5, user_tags:['Frontend', 'Nextjs', 'Reactjs']
+ERROR | 2024-12-11 15:34:49,893 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 51, in post
+    preferences, tags = my_function(user.preferences, post.tags.all(), weight, user.tags)
+TypeError: cannot unpack non-iterable NoneType object
+INFO | 2024-12-11 15:35:53,264 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:35:53,797 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:35:55,256 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:35:55,765 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:35:57,266 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:35:57,800 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:36:01,333 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:36:01,840 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:36:07,458 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:36:08,004 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:36:13,735 | views | 15 | Received interaction request.
+INFO | 2024-12-11 15:36:13,781 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'report'}
+INFO | 2024-12-11 15:36:13,789 | views | 46 | Adjusting preferences for user_id: user101.Current preferences: {'Django': 5.35, 'Nextjs': -5.88, 'Backend': 58.82, 'Reactjs': -5.88, 'Frontend': -5.88, 'Python Programming': 53.47}, Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>, Interaction weight: -5, user_tags:['Frontend', 'Nextjs', 'Reactjs']
+ERROR | 2024-12-11 15:36:13,822 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 51, in post
+    preferences, tags = my_function(user.preferences, post.tags.all(), weight, user.tags)
+TypeError: cannot unpack non-iterable NoneType object
+INFO | 2024-12-11 15:36:35,716 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:36:36,250 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:36:37,707 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:36:38,218 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:36:42,731 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:36:43,257 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 15:36:48,848 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 15:36:49,439 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:12:00,806 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:12:02,820 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:12:05,405 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:12:05,954 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:12:08,373 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:12:08,875 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:12:13,273 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:12:13,804 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:12:15,237 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:12:15,754 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:12:20,455 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:12:20,509 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'report'}
+INFO | 2024-12-11 17:12:20,525 | views | 40 | Interaction already exists: report for post post200 by user user101
+WARNING | 2024-12-11 17:12:20,525 | log | 248 | Bad Request: /api/interaction
+INFO | 2024-12-11 17:12:56,083 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:12:56,711 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:13:09,605 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:13:10,156 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:13:12,587 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:13:13,116 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:22:44,886 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:22:45,009 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'share'}
+INFO | 2024-12-11 17:22:45,041 | views | 59 | Adjusting preferences for user_id: user101.Current preferences: {'Django': 5.35, 'Nextjs': -5.88, 'Backend': 58.82, 'Reactjs': -5.88, 'Frontend': -5.88, 'Python Programming': 53.47}, Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>, Interaction weight: 10, user_tags:['Frontend', 'Nextjs', 'Reactjs']
+ERROR | 2024-12-11 17:22:45,270 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 64, in post
+    preferences, tags = my_function(user.preferences, post.tags.all(), weight, user.tags)
+TypeError: cannot unpack non-iterable NoneType object
+INFO | 2024-12-11 17:26:11,865 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:26:12,877 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:26:28,938 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:26:29,464 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:26:36,116 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:26:36,641 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:26:39,144 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:26:39,717 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:26:41,211 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:26:41,789 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:29:38,897 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:29:39,475 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:38:47,965 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:38:48,540 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:39:05,618 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:39:06,176 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:39:19,138 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:39:19,748 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:39:22,219 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:39:22,791 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:39:25,338 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:39:25,856 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:40:46,640 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:40:47,225 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:40:53,919 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:40:54,488 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:40:58,050 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:40:58,616 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:41:26,322 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:41:26,994 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:41:41,008 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:41:41,566 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:41:43,977 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:41:44,573 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:42:10,939 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:42:11,499 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:42:41,032 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 17:42:41,639 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:43:07,236 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:43:07,801 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:43:09,269 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:43:09,884 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:43:11,298 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:43:11,853 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:43:18,558 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:43:19,216 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:43:23,247 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:43:23,295 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: user101>, 'interaction_type': 'share'}
+INFO | 2024-12-11 17:43:23,303 | views | 59 | Adjusting preferences for user_id: user101.Current preferences: {'Django': 5.35, 'Nextjs': -5.88, 'Backend': 58.82, 'Reactjs': -5.88, 'Frontend': -5.88, 'Python Programming': 53.47}, Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>, Interaction weight: 10, user_tags:['Frontend', 'Nextjs', 'Reactjs']
+INFO | 2024-12-11 17:43:23,303 | helpers | 32 | Adjusting preferences for user.
+INFO | 2024-12-11 17:43:23,303 | helpers | 33 | Initial preferences: {'Django': 5.35, 'Nextjs': -5.88, 'Backend': 58.82, 'Reactjs': -5.88, 'Frontend': -5.88, 'Python Programming': 53.47}
+INFO | 2024-12-11 17:43:23,303 | helpers | 34 | Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>
+INFO | 2024-12-11 17:43:23,303 | helpers | 35 | Interaction weight: 10
+INFO | 2024-12-11 17:43:23,303 | helpers | 36 | user tag list: ['Frontend', 'Nextjs', 'Reactjs']
+INFO | 2024-12-11 17:43:23,303 | helpers | 55 | Total preferences sum: 130.0
+INFO | 2024-12-11 17:43:23,303 | helpers | 67 | Final adjusted preferences: {'Django': 4.12, 'Nextjs': 3.17, 'Backend': 45.25, 'Reactjs': 3.17, 'Frontend': 3.17, 'Python Programming': 41.13}
+INFO | 2024-12-11 17:43:23,319 | views | 71 | User preferences and tags saved: {'Django': 4.12, 'Nextjs': 3.17, 'Backend': 45.25, 'Reactjs': 3.17, 'Frontend': 3.17, 'Python Programming': 41.13}
+INFO | 2024-12-11 17:43:23,328 | views | 81 | Interaction recorded: share for post post200 by user user101
+INFO | 2024-12-11 17:45:02,440 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:45:02,505 | views | 22 | Validated data: {'post': <Post: post001>, 'user': <User: user101>, 'interaction_type': 'share'}
+INFO | 2024-12-11 17:45:02,521 | views | 59 | Adjusting preferences for user_id: user101.Current preferences: {'Django': 4.12, 'Nextjs': 3.17, 'Backend': 45.25, 'Reactjs': 3.17, 'Frontend': 3.17, 'Python Programming': 41.13}, Post tags: <QuerySet [<Tag: Backend>, <Tag: Python Programming>]>, Interaction weight: 10, user_tags:['Frontend', 'Nextjs', 'Reactjs']
+INFO | 2024-12-11 17:45:02,521 | helpers | 32 | Adjusting preferences for user.
+INFO | 2024-12-11 17:45:02,521 | helpers | 33 | Initial preferences: {'Django': 4.12, 'Nextjs': 3.17, 'Backend': 45.25, 'Reactjs': 3.17, 'Frontend': 3.17, 'Python Programming': 41.13}
+INFO | 2024-12-11 17:45:02,521 | helpers | 34 | Post tags: <QuerySet [<Tag: Backend>, <Tag: Python Programming>]>
+INFO | 2024-12-11 17:45:02,521 | helpers | 35 | Interaction weight: 10
+INFO | 2024-12-11 17:45:02,521 | helpers | 36 | user tag list: ['Frontend', 'Nextjs', 'Reactjs']
+INFO | 2024-12-11 17:45:02,521 | helpers | 55 | Total preferences sum: 120.00999999999999
+INFO | 2024-12-11 17:45:02,521 | helpers | 67 | Final adjusted preferences: {'Django': 3.43, 'Nextjs': 2.64, 'Backend': 46.04, 'Reactjs': 2.64, 'Frontend': 2.64, 'Python Programming': 42.6}
+INFO | 2024-12-11 17:45:02,529 | views | 71 | User preferences and tags saved: {'Django': 3.43, 'Nextjs': 2.64, 'Backend': 46.04, 'Reactjs': 2.64, 'Frontend': 2.64, 'Python Programming': 42.6}
+INFO | 2024-12-11 17:45:02,534 | views | 81 | Interaction recorded: share for post post001 by user user101
+INFO | 2024-12-11 17:45:20,513 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:45:20,587 | views | 22 | Validated data: {'post': <Post: post001>, 'user': <User: user101>, 'interaction_type': 'share'}
+INFO | 2024-12-11 17:45:20,595 | views | 39 | Interaction already exists: share for post post001 by user user101
+WARNING | 2024-12-11 17:45:20,595 | log | 248 | Bad Request: /api/interaction
+INFO | 2024-12-11 17:45:25,945 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:45:26,019 | views | 22 | Validated data: {'post': <Post: post001>, 'user': <User: user101>, 'interaction_type': 'share'}
+INFO | 2024-12-11 17:45:26,028 | views | 39 | Interaction already exists: share for post post001 by user user101
+WARNING | 2024-12-11 17:45:26,028 | log | 248 | Bad Request: /api/interaction
+INFO | 2024-12-11 17:45:33,972 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:45:34,056 | views | 22 | Validated data: {'post': <Post: post002>, 'user': <User: user101>, 'interaction_type': 'share'}
+INFO | 2024-12-11 17:45:34,071 | views | 59 | Adjusting preferences for user_id: user101.Current preferences: {'Django': 3.43, 'Nextjs': 2.64, 'Backend': 46.04, 'Reactjs': 2.64, 'Frontend': 2.64, 'Python Programming': 42.6}, Post tags: <QuerySet [<Tag: Backend>, <Tag: Django>]>, Interaction weight: 10, user_tags:['Frontend', 'Nextjs', 'Reactjs']
+INFO | 2024-12-11 17:45:34,071 | helpers | 32 | Adjusting preferences for user.
+INFO | 2024-12-11 17:45:34,071 | helpers | 33 | Initial preferences: {'Django': 3.43, 'Nextjs': 2.64, 'Backend': 46.04, 'Reactjs': 2.64, 'Frontend': 2.64, 'Python Programming': 42.6}
+INFO | 2024-12-11 17:45:34,071 | helpers | 34 | Post tags: <QuerySet [<Tag: Backend>, <Tag: Django>]>
+INFO | 2024-12-11 17:45:34,071 | helpers | 35 | Interaction weight: 10
+INFO | 2024-12-11 17:45:34,071 | helpers | 36 | user tag list: ['Frontend', 'Nextjs', 'Reactjs']
+INFO | 2024-12-11 17:45:34,079 | helpers | 55 | Total preferences sum: 119.99000000000001
+INFO | 2024-12-11 17:45:34,079 | helpers | 67 | Final adjusted preferences: {'Django': 11.19, 'Nextjs': 2.2, 'Backend': 46.7, 'Reactjs': 2.2, 'Frontend': 2.2, 'Python Programming': 35.5}
+INFO | 2024-12-11 17:45:34,079 | views | 71 | User preferences and tags saved: {'Django': 11.19, 'Nextjs': 2.2, 'Backend': 46.7, 'Reactjs': 2.2, 'Frontend': 2.2, 'Python Programming': 35.5}
+INFO | 2024-12-11 17:45:34,087 | views | 81 | Interaction recorded: share for post post002 by user user101
+INFO | 2024-12-11 17:47:35,380 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:47:36,100 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:47:43,900 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:47:44,384 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:47:45,838 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:47:46,410 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:47:48,934 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:47:49,462 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:47:53,014 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:47:53,655 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:47:55,183 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:47:55,701 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:48:08,684 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:48:09,244 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:48:47,231 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:48:47,805 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:48:49,278 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:48:49,819 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:48:53,190 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:48:53,691 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:48:57,028 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:48:57,542 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:48:58,935 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:48:59,446 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:02,983 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:03,622 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:05,069 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:05,709 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:06,955 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:07,512 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:09,980 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:10,537 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:15,113 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:15,776 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:24,455 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:24,972 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:26,436 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:26,946 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:29,412 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:29,979 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:33,525 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:49:34,048 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:49:55,426 | views | 15 | Received interaction request.
+INFO | 2024-12-11 17:49:55,491 | views | 22 | Validated data: {'post': <Post: post002>, 'user': <User: user102>, 'interaction_type': 'share'}
+INFO | 2024-12-11 17:49:55,518 | views | 59 | Adjusting preferences for user_id: user102.Current preferences: {'Backend': 50.0, 'Python Programming': 50.0}, Post tags: <QuerySet [<Tag: Backend>, <Tag: Django>]>, Interaction weight: 10, user_tags:['Backend', 'Python Programming']
+INFO | 2024-12-11 17:49:55,518 | helpers | 32 | Adjusting preferences for user.
+INFO | 2024-12-11 17:49:55,518 | helpers | 33 | Initial preferences: {'Backend': 50.0, 'Python Programming': 50.0}
+INFO | 2024-12-11 17:49:55,518 | helpers | 34 | Post tags: <QuerySet [<Tag: Backend>, <Tag: Django>]>
+INFO | 2024-12-11 17:49:55,518 | helpers | 35 | Interaction weight: 10
+INFO | 2024-12-11 17:49:55,518 | helpers | 36 | user tag list: ['Backend', 'Python Programming']
+INFO | 2024-12-11 17:49:55,524 | helpers | 59 | Total preferences sum: 120.0
+INFO | 2024-12-11 17:49:55,524 | helpers | 71 | Final adjusted preferences: {'Backend': 50.0, 'Python Programming': 41.67, 'Django': 8.33}
+INFO | 2024-12-11 17:49:55,532 | views | 71 | User preferences and tags saved: {'Backend': 50.0, 'Python Programming': 41.67, 'Django': 8.33}
+INFO | 2024-12-11 17:49:55,542 | views | 81 | Interaction recorded: share for post post002 by user user102
+INFO | 2024-12-11 17:52:49,318 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:52:50,022 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:52:54,602 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:52:55,126 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:52:56,575 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:52:57,099 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:53:02,761 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:53:03,300 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:53:07,887 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:53:08,457 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:53:14,102 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:53:14,706 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:53:19,243 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:53:19,892 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:53:35,983 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:53:36,498 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:53:45,285 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:53:45,787 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:55:57,679 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:55:58,483 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:55:59,967 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:56:00,592 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:56:07,305 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:56:07,894 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:56:10,356 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:56:11,002 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 17:56:18,740 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 17:56:19,274 | autoreload | 668 | Watching for file changes with StatReloader
