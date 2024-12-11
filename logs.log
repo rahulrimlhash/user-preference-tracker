@@ -390,3 +390,74 @@ INFO | 2024-12-11 17:56:10,356 | autoreload | 266 | D:\my-projects\talrop-task\u
 INFO | 2024-12-11 17:56:11,002 | autoreload | 668 | Watching for file changes with StatReloader
 INFO | 2024-12-11 17:56:18,740 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
 INFO | 2024-12-11 17:56:19,274 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:26:38,507 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:26:44,533 | views | 15 | Received interaction request.
+INFO | 2024-12-11 20:26:44,639 | views | 22 | Validated data: {'post': <Post: post002>, 'user': <User: user102>, 'interaction_type': 'share'}
+INFO | 2024-12-11 20:26:44,648 | views | 39 | Interaction already exists: share for post post002 by user user102
+WARNING | 2024-12-11 20:26:44,648 | log | 248 | Bad Request: /api/interaction
+INFO | 2024-12-11 20:27:01,126 | views | 82 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 20:27:01,126 | views | 88 | Fetching preferences for user_id: user101
+INFO | 2024-12-11 20:27:01,273 | views | 98 | Cache miss for user_id: user101. Fetching preferences from the database.
+INFO | 2024-12-11 20:27:01,364 | views | 102 | User found: user101. Proceeding to serialize preferences.
+ERROR | 2024-12-11 20:27:01,562 | log | 248 | Internal Server Error: /api/preferences
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 108, in get
+    preferences_data = serializer.data
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 523, in to_representation
+    for field in fields:
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 1103, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 1249, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\serializers.py", line 1367, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `tagspreferences` is not valid for model `User` in `preferences.serializers.PreferenceSerializer`.
+INFO | 2024-12-11 20:29:05,866 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\serializers.py changed, reloading.
+INFO | 2024-12-11 20:29:07,132 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:29:12,418 | views | 82 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 20:29:12,425 | views | 88 | Fetching preferences for user_id: user101
+INFO | 2024-12-11 20:29:12,433 | views | 98 | Cache miss for user_id: user101. Fetching preferences from the database.
+INFO | 2024-12-11 20:29:12,507 | views | 102 | User found: user101. Proceeding to serialize preferences.
+INFO | 2024-12-11 20:29:12,507 | views | 109 | Preferences data serialized for user_id: user101.
+INFO | 2024-12-11 20:29:12,516 | views | 112 | Preferences cached for user_id: user101 with TTL: 3600
+INFO | 2024-12-11 20:29:12,516 | views | 114 | Returning preferences data for user_id: user101.
+INFO | 2024-12-11 20:29:42,567 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 20:29:43,293 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:29:44,874 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 20:29:45,598 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:29:49,310 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 20:29:50,114 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:30:07,981 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 20:30:08,700 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:30:10,355 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 20:30:11,094 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:30:15,851 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 20:30:16,567 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 20:30:18,096 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py changed, reloading.
+INFO | 2024-12-11 20:30:18,868 | autoreload | 668 | Watching for file changes with StatReloader

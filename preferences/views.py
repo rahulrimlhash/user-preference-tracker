@@ -42,15 +42,14 @@ class RecordInteractionView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        # Process interaction
-        interaction_type = data['interaction_type'] # like
+        interaction_type = data['interaction_type'] 
         interaction_weights = {
             'like': 5,
             'comment': 3,
             'share': 10,
             'report': -5
         }
-        # weight 5
+        
         if interaction_type not in interaction_weights:
             logger.warning(f"Invalid interaction type: {interaction_type}")
             return Response({"status": "error", "message": "Invalid interaction type"}, status=status.HTTP_400_BAD_REQUEST)
@@ -58,12 +57,7 @@ class RecordInteractionView(APIView):
         weight = interaction_weights[interaction_type]
         logger.info(f"Adjusting preferences for user_id: {user.user_id}.Current preferences: {user.preferences}, Post tags: {post.tags.all()}, Interaction weight: {weight}, user_tags:{user.tags}")
 
-        print("------------------------------------", user.tags)
-
-        # Adjust user preferences
-        preferences, tags = adjust_preferences1(user.preferences, post.tags.all(), weight, user.tags)
-        print(tags, '----------------------tags-----------------------------------------------')        
-        print(preferences, '------------------preferences-----------------------------------------')   
+        preferences, tags = adjust_preferences1(user.preferences, post.tags.all(), weight, user.tags)  
         try:
             user.preferences = preferences
             user.tags = tags
@@ -91,10 +85,9 @@ class FetchPreferencesView(APIView):
             return Response({"status": "error", "message": "user_id is required"}, status=status.HTTP_400_BAD_REQUEST)
         
         logger.info(f"Fetching preferences for user_id: {user_id}")
-        # Define cache key
+        
         cache_key = f"user_preferences_{user_id}"
         
-        # Check if preferences are cached
         cached_preferences = cache.get(cache_key)
         if cached_preferences:
             logger.info(f"Cache hit for user_id: {user_id}. Returning cached data.")

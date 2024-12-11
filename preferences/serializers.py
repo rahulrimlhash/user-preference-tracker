@@ -12,4 +12,4 @@ class InteractionSerializer(serializers.ModelSerializer):
 class PreferenceSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['user_id', 'tags' 'preferences']
+        fields = ['user_id', 'preferences']
