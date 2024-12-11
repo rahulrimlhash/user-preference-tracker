@@ -639,3 +639,38 @@ INFO | 2024-12-11 22:53:56,338 | autoreload | 266 | D:\my-projects\talrop-task\u
 INFO | 2024-12-11 22:53:56,876 | autoreload | 668 | Watching for file changes with StatReloader
 INFO | 2024-12-11 22:54:01,379 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
 INFO | 2024-12-11 22:54:01,935 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 23:57:29,042 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 23:57:56,340 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 23:57:57,056 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 23:58:10,146 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 23:58:10,146 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 23:58:10,228 | views | 99 | Cache miss for user_id: 1. Fetching preferences from the database.
+INFO | 2024-12-11 23:58:10,277 | views | 103 | User found: 1. Proceeding to serialize preferences.
+INFO | 2024-12-11 23:58:10,277 | views | 110 | Preferences data serialized for user_id: 1.
+INFO | 2024-12-11 23:58:10,286 | views | 113 | Preferences cached for user_id: 1 with TTL: 3600
+INFO | 2024-12-11 23:58:10,286 | views | 115 | Returning preferences data for user_id: 1.
+INFO | 2024-12-11 23:58:52,094 | views | 15 | Received interaction request.
+INFO | 2024-12-11 23:58:52,159 | views | 22 | Validated data: {'post': <Post: post200>, 'user': <User: 1>, 'interaction_type': 'like'}
+INFO | 2024-12-11 23:58:52,176 | views | 59 | Adjusting preferences for user_id: 1.Current preferences: {'Django': 33.33, 'Backend': 33.33, 'Frontend': 33.33}
+INFO | 2024-12-11 23:58:52,192 | views | 60 | Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>, Interaction weight: 5, user_tags:['Frontend', 'Backend', 'Django']
+INFO | 2024-12-11 23:58:52,192 | helpers | 6 | Adjusting preferences for user.
+INFO | 2024-12-11 23:58:52,192 | helpers | 7 | Initial preferences: {'Django': 33.33, 'Backend': 33.33, 'Frontend': 33.33}
+INFO | 2024-12-11 23:58:52,192 | helpers | 8 | Post tags: <QuerySet [<Tag: Frontend>, <Tag: Nextjs>, <Tag: Reactjs>]>
+INFO | 2024-12-11 23:58:52,192 | helpers | 9 | Interaction weight: 5
+INFO | 2024-12-11 23:58:52,192 | helpers | 10 | User tag list: ['Frontend', 'Backend', 'Django']
+INFO | 2024-12-11 23:58:52,199 | helpers | 28 | Preferences after weight adjustment: {'Django': 33.33, 'Backend': 33.33, 'Frontend': 38.33, 'Nextjs': 5, 'Reactjs': 5}
+INFO | 2024-12-11 23:58:52,199 | helpers | 48 | Final normalized preferences: {'Django': 20.0, 'Backend': 20.0, 'Frontend': 20.0, 'Nextjs': 20.0, 'Reactjs': 20.0}
+INFO | 2024-12-11 23:58:52,217 | views | 68 | User preferences and tags saved: {'Django': 20.0, 'Backend': 20.0, 'Frontend': 20.0, 'Nextjs': 20.0, 'Reactjs': 20.0}
+INFO | 2024-12-11 23:58:52,230 | views | 78 | Interaction recorded: like for post post200 by user 1
+INFO | 2024-12-11 23:59:04,719 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 23:59:04,719 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 23:59:04,719 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 23:59:06,837 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 23:59:06,837 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 23:59:06,845 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 23:59:11,828 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 23:59:11,828 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 23:59:11,836 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 23:59:15,539 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 23:59:15,539 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 23:59:15,539 | views | 96 | Cache hit for user_id: 1. Returning cached data.

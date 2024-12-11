@@ -2,7 +2,7 @@ import logging
  
 logger = logging.getLogger(__name__) 
  
-def adjust_preferences1(current_preferences, post_tags, weight, user_tags): 
+def adjust_preferences(current_preferences, post_tags, weight, user_tags): 
     logger.info("Adjusting preferences for user.") 
     logger.info(f"Initial preferences: {current_preferences}") 
     logger.info(f"Post tags: {post_tags}") 
