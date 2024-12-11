@@ -528,3 +528,114 @@ WARNING | 2024-12-11 21:12:43,282 | log | 248 | Not Found: /admin/
 INFO | 2024-12-11 21:12:51,386 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\user_pref_tracking\urls.py changed, reloading.
 INFO | 2024-12-11 21:12:52,167 | autoreload | 668 | Watching for file changes with StatReloader
 WARNING | 2024-12-11 21:12:53,820 | log | 248 | Not Found: /
+INFO | 2024-12-11 21:49:42,012 | autoreload | 668 | Watching for file changes with StatReloader
+WARNING | 2024-12-11 21:49:44,433 | log | 248 | Not Found: /
+INFO | 2024-12-11 21:50:57,264 | views | 15 | Received interaction request.
+INFO | 2024-12-11 21:50:57,309 | views | 22 | Validated data: {'post': <Post: 1>, 'user': <User: 1>, 'interaction_type': 'like'}
+INFO | 2024-12-11 21:50:57,318 | views | 59 | Adjusting preferences for user_id: 1.Current preferences: None
+INFO | 2024-12-11 21:50:57,325 | views | 60 | Post tags: <QuerySet [<Tag: Frontend>, <Tag: Backend>, <Tag: Django>]>, Interaction weight: 5, user_tags:None
+INFO | 2024-12-11 21:50:57,325 | helpers | 6 | Adjusting preferences for user.
+INFO | 2024-12-11 21:50:57,325 | helpers | 7 | Initial preferences: None
+INFO | 2024-12-11 21:50:57,328 | helpers | 8 | Post tags: <QuerySet [<Tag: Frontend>, <Tag: Backend>, <Tag: Django>]>
+INFO | 2024-12-11 21:50:57,328 | helpers | 9 | Interaction weight: 5
+INFO | 2024-12-11 21:50:57,328 | helpers | 10 | user tag list: None
+INFO | 2024-12-11 21:50:57,329 | helpers | 14 | Initialized preferences: {'Frontend': 0, 'Backend': 0, 'Django': 0}
+ERROR | 2024-12-11 21:50:57,753 | log | 248 | Internal Server Error: /api/interaction
+Traceback (most recent call last):
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\my-projects\talrop-task\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\views.py", line 62, in post
+    preferences, tags = adjust_preferences(user.preferences, post.tags.all(), weight, user.tags)
+  File "D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py", line 25, in adjust_preferences
+    if tag_name not in user_tags:
+TypeError: argument of type 'NoneType' is not iterable
+INFO | 2024-12-11 22:46:08,229 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:46:15,246 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:46:26,660 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:46:27,172 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:46:29,598 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:46:30,283 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:46:50,323 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:46:50,822 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:47:01,493 | views | 15 | Received interaction request.
+INFO | 2024-12-11 22:47:01,557 | views | 22 | Validated data: {'post': <Post: 1>, 'user': <User: 1>, 'interaction_type': 'like'}
+INFO | 2024-12-11 22:47:01,566 | views | 59 | Adjusting preferences for user_id: 1.Current preferences: None
+INFO | 2024-12-11 22:47:01,575 | views | 60 | Post tags: <QuerySet [<Tag: Frontend>, <Tag: Backend>, <Tag: Django>]>, Interaction weight: 5, user_tags:None
+INFO | 2024-12-11 22:47:01,575 | helpers | 6 | Adjusting preferences for user.
+INFO | 2024-12-11 22:47:01,575 | helpers | 7 | Initial preferences: None
+INFO | 2024-12-11 22:47:01,576 | helpers | 8 | Post tags: <QuerySet [<Tag: Frontend>, <Tag: Backend>, <Tag: Django>]>
+INFO | 2024-12-11 22:47:01,577 | helpers | 9 | Interaction weight: 5
+INFO | 2024-12-11 22:47:01,577 | helpers | 10 | User tag list: None
+INFO | 2024-12-11 22:47:01,577 | helpers | 32 | Preferences after updating with weights: {'Frontend': 5, 'Backend': 5, 'Django': 5}
+INFO | 2024-12-11 22:47:01,577 | helpers | 56 | Final normalized preferences: {'Frontend': 33.33, 'Backend': 33.33, 'Django': 33.33}
+INFO | 2024-12-11 22:47:01,590 | views | 68 | User preferences and tags saved: {'Frontend': 33.33, 'Backend': 33.33, 'Django': 33.33}
+INFO | 2024-12-11 22:47:01,597 | views | 78 | Interaction recorded: like for post 1 by user 1
+INFO | 2024-12-11 22:47:47,876 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 22:47:47,876 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 22:47:48,354 | views | 99 | Cache miss for user_id: 1. Fetching preferences from the database.
+INFO | 2024-12-11 22:47:48,413 | views | 103 | User found: 1. Proceeding to serialize preferences.
+INFO | 2024-12-11 22:47:48,413 | views | 110 | Preferences data serialized for user_id: 1.
+INFO | 2024-12-11 22:47:48,415 | views | 113 | Preferences cached for user_id: 1 with TTL: 3600
+INFO | 2024-12-11 22:47:48,415 | views | 115 | Returning preferences data for user_id: 1.
+INFO | 2024-12-11 22:47:53,795 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 22:47:53,795 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 22:47:53,796 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 22:52:39,277 | views | 15 | Received interaction request.
+INFO | 2024-12-11 22:52:39,333 | views | 22 | Validated data: {'post': <Post: post002>, 'user': <User: 1>, 'interaction_type': 'sharee'}
+WARNING | 2024-12-11 22:52:39,344 | views | 55 | Invalid interaction type: sharee
+WARNING | 2024-12-11 22:52:39,345 | log | 248 | Bad Request: /api/interaction
+INFO | 2024-12-11 22:52:49,298 | views | 15 | Received interaction request.
+INFO | 2024-12-11 22:52:49,350 | views | 22 | Validated data: {'post': <Post: post002>, 'user': <User: 1>, 'interaction_type': 'share'}
+INFO | 2024-12-11 22:52:49,355 | views | 59 | Adjusting preferences for user_id: 1.Current preferences: {'Django': 33.33, 'Backend': 33.33, 'Frontend': 33.33}
+INFO | 2024-12-11 22:52:49,384 | views | 60 | Post tags: <QuerySet [<Tag: Backend>, <Tag: Django>]>, Interaction weight: 10, user_tags:['Frontend', 'Backend', 'Django']
+INFO | 2024-12-11 22:52:49,384 | helpers | 6 | Adjusting preferences for user.
+INFO | 2024-12-11 22:52:49,384 | helpers | 7 | Initial preferences: {'Django': 33.33, 'Backend': 33.33, 'Frontend': 33.33}
+INFO | 2024-12-11 22:52:49,386 | helpers | 8 | Post tags: <QuerySet [<Tag: Backend>, <Tag: Django>]>
+INFO | 2024-12-11 22:52:49,386 | helpers | 9 | Interaction weight: 10
+INFO | 2024-12-11 22:52:49,386 | helpers | 10 | User tag list: ['Frontend', 'Backend', 'Django']
+INFO | 2024-12-11 22:52:49,387 | helpers | 32 | Preferences after updating with weights: {'Django': 43.33, 'Backend': 43.33, 'Frontend': 33.33}
+INFO | 2024-12-11 22:52:49,387 | helpers | 56 | Final normalized preferences: {'Django': 33.33, 'Backend': 33.33, 'Frontend': 33.33}
+INFO | 2024-12-11 22:52:49,401 | views | 68 | User preferences and tags saved: {'Django': 33.33, 'Backend': 33.33, 'Frontend': 33.33}
+INFO | 2024-12-11 22:52:49,416 | views | 78 | Interaction recorded: share for post post002 by user 1
+INFO | 2024-12-11 22:52:56,826 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 22:52:56,826 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 22:52:56,828 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 22:52:58,060 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 22:52:58,060 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 22:52:58,061 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 22:53:00,274 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 22:53:00,275 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 22:53:00,275 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 22:53:01,331 | views | 84 | Received GET request to fetch user preferences.
+INFO | 2024-12-11 22:53:01,331 | views | 90 | Fetching preferences for user_id: 1
+INFO | 2024-12-11 22:53:01,332 | views | 96 | Cache hit for user_id: 1. Returning cached data.
+INFO | 2024-12-11 22:53:33,716 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:53:34,534 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:53:37,011 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:53:37,609 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:53:40,056 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:53:40,606 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:53:43,070 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:53:43,622 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:53:49,202 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:53:49,746 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:53:51,182 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:53:51,781 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:53:56,338 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:53:56,876 | autoreload | 668 | Watching for file changes with StatReloader
+INFO | 2024-12-11 22:54:01,379 | autoreload | 266 | D:\my-projects\talrop-task\user_pref_tracking\preferences\helpers.py changed, reloading.
+INFO | 2024-12-11 22:54:01,935 | autoreload | 668 | Watching for file changes with StatReloader
