@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Post, User, Interaction
 from .serializers import InteractionSerializer, PreferenceSerializer
-from preferences.helpers import adjust_preferences1
+from preferences.helpers import adjust_preferences
 import logging
 
 logger = logging.getLogger(__name__)
@@ -35,6 +35,7 @@ class RecordInteractionView(APIView):
             post=post,
             interaction_type=interaction_type
         ).exists()
+        
         if existing_interaction:
             logger.info(f"Interaction already exists: {interaction_type} for post {post.post_id} by user {user.user_id}")
             return Response(
@@ -55,9 +56,11 @@ class RecordInteractionView(APIView):
             return Response({"status": "error", "message": "Invalid interaction type"}, status=status.HTTP_400_BAD_REQUEST)
         
         weight = interaction_weights[interaction_type]
-        logger.info(f"Adjusting preferences for user_id: {user.user_id}.Current preferences: {user.preferences}, Post tags: {post.tags.all()}, Interaction weight: {weight}, user_tags:{user.tags}")
-
-        preferences, tags = adjust_preferences1(user.preferences, post.tags.all(), weight, user.tags)  
+        logger.info(f"Adjusting preferences for user_id: {user.user_id}.Current preferences: {user.preferences}")
+        logger.info(f"Post tags: {post.tags.all()}, Interaction weight: {weight}, user_tags:{user.tags}")
+        
+        preferences, tags = adjust_preferences(user.preferences, post.tags.all(), weight, user.tags)
+         
         try:
             user.preferences = preferences
             user.tags = tags
@@ -111,7 +114,6 @@ class FetchPreferencesView(APIView):
         
         logger.info(f"Returning preferences data for user_id: {user_id}.")
         return Response(preferences_data, status=status.HTTP_200_OK)
-
 
 
 # without using cache mechanism
