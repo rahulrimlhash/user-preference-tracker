@@ -14,7 +14,8 @@ This project is designed to track user interactions with posts and update user p
 ### Prerequisites  
 - Python 3.8 or higher  
 - Redis server  
-- Django framework  
+- Django framework
+- Posgresql
 
 ### Step-by-Step Guide  
 
@@ -46,6 +47,10 @@ This project is designed to track user interactions with posts and update user p
        ```bash
        sudo apt update
        sudo apt install redis
+       ```
+     On Windows:  
+       ```bash
+       pip install redis
        ```  
      - On macOS:  
        ```bash
