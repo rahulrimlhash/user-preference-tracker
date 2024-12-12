@@ -15,7 +15,7 @@ This project is designed to track user interactions with posts and update user p
 - Python 3.8 or higher  
 - Redis server  
 - Django framework
-- Posgresql
+- Postgresql
 
 ### Step-by-Step Guide  
 
