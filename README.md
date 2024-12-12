@@ -48,7 +48,7 @@ This project is designed to track user interactions with posts and update user p
        sudo apt update
        sudo apt install redis
        ```
-     On Windows:  
+     - On Windows:  
        ```bash
        pip install redis
        ```  
